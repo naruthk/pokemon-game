@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+        
+    <head>
+        <title>Test</title>
+        <script type="text/javascript" src="//courses.cs.washington.edu/courses/cse154/17sp/lib/ajax-promise.js"></script>
+        <style type="text/css">
+          body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+          }
+          p {
+           font-weight: bold;
+           margin-bottom: 10px;
+           color: red;
+          }
+          form {
+           margin-left: 20px;
+          }
+          form, input {
+           font-size: 16px;
+          }
+          input {
+           padding: 5px;
+           border: 1px solid #CCC;
+          }
+          div {
+           margin-bottom: 20px;
+          }
+        </style>
+    </head>
+    
+    <body>
+     <div>
+        <p>Test insert.php</p>
+         <form action="insert.php" method="post">
+              Pokemon Name: <input type="text" name="name"> 
+              <!--Nick Name: <input type="text" name="nickname"><br>-->
+              <input type="submit" value="Send">
+        </form>
+      </div>
+      <div></div>
+        <p>Test insert.php (with nickname)</p>
+         <form action="insert.php" method="post">
+              Pokemon Name: <input type="text" name="name"><br>
+              Nick Name: <input type="text" name="nickname">
+              <input type="submit" value="Send">
+        </form>
+      </div>
+      <div>
+        <p>Test delete.php (without mode)</p>
+         <form action="delete.php" method="post">
+              Pokemon Name: <input type="text" name="name"> 
+              <input type="submit" value="Send">
+        </form>
+     </div>
+     <div>
+        <p>Test delete.php with mode</p>
+         <form action="delete.php" method="post">
+              Mode name: <input type="text" name="mode"> 
+              <input type="submit" value="Send">
+        </form>
+     </div>
+     <div>
+        <p>Test trade.php</p>
+         <form action="trade.php" method="post">
+              My Pokemon name: <input type="text" name="mypokemon"><br>
+              Their Pokemon name: <input type="text" name="theirpokemon"> 
+              <input type="submit" value="Send">
+        </form>
+    </div>
+    <div>
+        <p>Test update.php</p>
+         <form action="update.php" method="post">
+              Original name: <input type="text" name="name"><br>
+              New name: <input type="text" name="nickname"> 
+              <input type="submit" value="Send">
+        </form>
+        </div>
+    </body>
+    
+</html>
